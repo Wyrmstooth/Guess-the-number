@@ -7,7 +7,7 @@
 let score = 5;
 let highscore = 0;
 
-let secretNumber = Math.trunc(Math.random() * 5 + 1);
+let secretNumber = Math.trunc(Math.random() * 20 + 1);
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -48,7 +48,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 document.querySelector('.again').addEventListener('click', function () {
-  secretNumber = Math.trunc(Math.random() * 5) + 1;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 5;
     document.querySelector('.score').textContent = '5'
   document.querySelector('.message').textContent = 'Start Guessing...';
