@@ -49,7 +49,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 5) + 1;
-  score = 20;
+  score = 5;
     document.querySelector('.score').textContent = '5'
   document.querySelector('.message').textContent = 'Start Guessing...';
   document.querySelector('.guess').value = '';
